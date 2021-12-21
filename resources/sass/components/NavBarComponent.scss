@@ -1,0 +1,53 @@
+.navbar_container{
+    border: 1px solid transparent;
+    border-radius: 0px .375rem .375rem 0px;
+    width: 50px;
+    height: calc( 100vh - 180px );
+    transition: width 0.3s linear;
+}
+
+.navbar_container:hover{
+    width: 150px;
+}
+
+.navbar_item, .navbar_sub-item{
+    display: flex;
+    transition: justify-content 0.1s linear;
+}
+
+.navbar_item:hover, .navbar_sub-item:hover{
+    justify-content: start !important;
+}
+
+.navbar_sub-item{
+    margin-left: 10px;
+}
+
+.navbar_item-icons{
+    margin-right: 20px;
+}
+
+.text-ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: width 0.3s linear;
+}
+
+.text-ellipsis:hover{
+    width: 200px;
+}
+
+.nav-link{
+    padding: .25rem 1em;
+}
+
+.color-aliceblue {
+    color: aliceblue;
+}
+
+.style-text{
+    font-size: .65rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #434950;
+}

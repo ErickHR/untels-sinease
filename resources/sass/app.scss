@@ -1,0 +1,41 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import '~vue-multiselect/dist/vue-multiselect.min.css';
+
+
+.card  {
+    margin-bottom: 30px;
+    border: 0;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important
+}
+
+.scroll-auto{
+    overflow: auto;
+    height: 90vh;
+}
+
+.w-18{
+    width: 18px;
+}
+
+.f-14{
+    font-size: 14px;
+}
+
+.is-invalid-select {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fb6340;
+    border-radius: 6px;
+}
+
+// input{
+//     text-transform: uppercase;
+// }
