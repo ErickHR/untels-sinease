@@ -122,7 +122,7 @@ class FileController extends Controller
         );
 
         $data = [
-            'url' => str_replace( "public", "storage", $storageUpload ),
+            'url' => str_replace( "storage/files", "get", $storageUpload ),
             'name_file' => $filename
         ];
 
