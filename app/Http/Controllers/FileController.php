@@ -127,7 +127,7 @@ class FileController extends Controller
         ];
 
         return response( [ 'value' => true, 'msg' => 'Documento subido', 'data' => $data ], 200 );
- 
+   
     }
 
     public function fileShow(){
