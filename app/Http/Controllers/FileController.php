@@ -136,7 +136,6 @@ class FileController extends Controller
 
     public function fileDowload( $img ){
         return Storage::download('public/files/'.$img);
-
     }
 
     function downloadFile($file_name){
