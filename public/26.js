@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[26],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/view/office/OfficeList.vue?vue&type=script&lang=js&":
-/*!**********************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/view/office/OfficeList.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/view/password/PasswordList.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/view/password/PasswordList.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -23,7 +23,6 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-//
 //
 //
 //
@@ -118,7 +117,13 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         }, _callee);
       }))();
     },
-    activeOrDesactiveItem: function activeOrDesactiveItem(id, status) {
+    showStatusItem: function showStatusItem(status) {
+      return !status ? 'ACTIVAR' : 'DESACTIVAR';
+    },
+    changeToAddRegister: function changeToAddRegister() {
+      this.$emit('changeToAddRegister', 'add');
+    },
+    getApiList: function getApiList(searchName) {
       var _this2 = this;
 
       return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
@@ -129,101 +134,54 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               case 0:
                 _context2.prev = 0;
                 body = {
-                  id: id,
-                  status: status
+                  name: searchName
                 };
                 _context2.next = 4;
-                return axios.post("office-active-desactive", body);
+                return searchName;
 
               case 4:
-                response = _context2.sent;
+                if (!_context2.sent) {
+                  _context2.next = 10;
+                  break;
+                }
+
+                _context2.next = 7;
+                return axios.post('standar-category-search', body);
+
+              case 7:
+                _context2.t0 = _context2.sent;
+                _context2.next = 13;
+                break;
+
+              case 10:
+                _context2.next = 12;
+                return axios('standar-category');
+
+              case 12:
+                _context2.t0 = _context2.sent;
+
+              case 13:
+                response = _context2.t0;
 
                 if (response.status == 200) {
                   if (response.data.value) {
-                    _this2.getApiList();
+                    _this2.dataList = _objectSpread({}, response.data.data);
                   }
                 }
 
-                _context2.next = 10;
+                _context2.next = 19;
                 break;
 
-              case 8:
-                _context2.prev = 8;
-                _context2.t0 = _context2["catch"](0);
+              case 17:
+                _context2.prev = 17;
+                _context2.t1 = _context2["catch"](0);
 
-              case 10:
+              case 19:
               case "end":
                 return _context2.stop();
             }
           }
-        }, _callee2, null, [[0, 8]]);
-      }))();
-    },
-    showStatusItem: function showStatusItem(status) {
-      return !status ? 'ACTIVAR' : 'DESACTIVAR';
-    },
-    changeToAddRegister: function changeToAddRegister() {
-      this.$emit('changeToAddRegister', 'add');
-    },
-    getApiList: function getApiList(searchName) {
-      var _this3 = this;
-
-      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3() {
-        var body, response;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee3$(_context3) {
-          while (1) {
-            switch (_context3.prev = _context3.next) {
-              case 0:
-                _context3.prev = 0;
-                body = {
-                  name: searchName
-                };
-                _context3.next = 4;
-                return searchName;
-
-              case 4:
-                if (!_context3.sent) {
-                  _context3.next = 10;
-                  break;
-                }
-
-                _context3.next = 7;
-                return axios.post('office-search', body);
-
-              case 7:
-                _context3.t0 = _context3.sent;
-                _context3.next = 13;
-                break;
-
-              case 10:
-                _context3.next = 12;
-                return axios('office');
-
-              case 12:
-                _context3.t0 = _context3.sent;
-
-              case 13:
-                response = _context3.t0;
-
-                if (response.status == 200) {
-                  if (response.data.value) {
-                    _this3.dataList = _objectSpread({}, response.data.data);
-                  }
-                }
-
-                _context3.next = 19;
-                break;
-
-              case 17:
-                _context3.prev = 17;
-                _context3.t1 = _context3["catch"](0);
-
-              case 19:
-              case "end":
-                return _context3.stop();
-            }
-          }
-        }, _callee3, null, [[0, 17]]);
+        }, _callee2, null, [[0, 17]]);
       }))();
     },
     showStatus: function showStatus(status) {
@@ -240,10 +198,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/view/office/OfficeList.vue?vue&type=template&id=04a9673e&":
-/*!**************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/view/office/OfficeList.vue?vue&type=template&id=04a9673e& ***!
-  \**************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/view/password/PasswordList.vue?vue&type=template&id=a99edefe&":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/view/password/PasswordList.vue?vue&type=template&id=a99edefe& ***!
+  \******************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -336,26 +294,6 @@ var render = function () {
                                 "dropdown-menu dropdown-menu-right dropdown-menu-arrow",
                             },
                             [
-                              _c(
-                                "div",
-                                {
-                                  staticClass: "dropdown-item",
-                                  on: {
-                                    click: function ($event) {
-                                      return _vm.activeOrDesactiveItem(
-                                        data.id,
-                                        !data.status
-                                      )
-                                    },
-                                  },
-                                },
-                                [
-                                  _vm._v(
-                                    _vm._s(_vm.showStatusItem(data.status))
-                                  ),
-                                ]
-                              ),
-                              _vm._v(" "),
                               data.status
                                 ? _c(
                                     "div",
@@ -394,7 +332,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-12 col-sm-3" }, [
-      _c("h3", { staticClass: "title-form" }, [_vm._v("Lista de Dimensiones")]),
+      _c("h3", { staticClass: "title-form" }, [
+        _vm._v("Lista de Categorias de Standar"),
+      ]),
     ])
   },
   function () {
@@ -570,17 +510,17 @@ function normalizeComponent (
 
 /***/ }),
 
-/***/ "./resources/js/view/office/OfficeList.vue":
-/*!*************************************************!*\
-  !*** ./resources/js/view/office/OfficeList.vue ***!
-  \*************************************************/
+/***/ "./resources/js/view/password/PasswordList.vue":
+/*!*****************************************************!*\
+  !*** ./resources/js/view/password/PasswordList.vue ***!
+  \*****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _OfficeList_vue_vue_type_template_id_04a9673e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./OfficeList.vue?vue&type=template&id=04a9673e& */ "./resources/js/view/office/OfficeList.vue?vue&type=template&id=04a9673e&");
-/* harmony import */ var _OfficeList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./OfficeList.vue?vue&type=script&lang=js& */ "./resources/js/view/office/OfficeList.vue?vue&type=script&lang=js&");
+/* harmony import */ var _PasswordList_vue_vue_type_template_id_a99edefe___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PasswordList.vue?vue&type=template&id=a99edefe& */ "./resources/js/view/password/PasswordList.vue?vue&type=template&id=a99edefe&");
+/* harmony import */ var _PasswordList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PasswordList.vue?vue&type=script&lang=js& */ "./resources/js/view/password/PasswordList.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -590,9 +530,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _OfficeList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _OfficeList_vue_vue_type_template_id_04a9673e___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _OfficeList_vue_vue_type_template_id_04a9673e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _PasswordList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _PasswordList_vue_vue_type_template_id_a99edefe___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _PasswordList_vue_vue_type_template_id_a99edefe___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -602,38 +542,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/view/office/OfficeList.vue"
+component.options.__file = "resources/js/view/password/PasswordList.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/view/office/OfficeList.vue?vue&type=script&lang=js&":
-/*!**************************************************************************!*\
-  !*** ./resources/js/view/office/OfficeList.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************/
+/***/ "./resources/js/view/password/PasswordList.vue?vue&type=script&lang=js&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/view/password/PasswordList.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_OfficeList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./OfficeList.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/view/office/OfficeList.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_OfficeList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PasswordList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./PasswordList.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/view/password/PasswordList.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PasswordList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/view/office/OfficeList.vue?vue&type=template&id=04a9673e&":
-/*!********************************************************************************!*\
-  !*** ./resources/js/view/office/OfficeList.vue?vue&type=template&id=04a9673e& ***!
-  \********************************************************************************/
+/***/ "./resources/js/view/password/PasswordList.vue?vue&type=template&id=a99edefe&":
+/*!************************************************************************************!*\
+  !*** ./resources/js/view/password/PasswordList.vue?vue&type=template&id=a99edefe& ***!
+  \************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_OfficeList_vue_vue_type_template_id_04a9673e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./OfficeList.vue?vue&type=template&id=04a9673e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/view/office/OfficeList.vue?vue&type=template&id=04a9673e&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_OfficeList_vue_vue_type_template_id_04a9673e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PasswordList_vue_vue_type_template_id_a99edefe___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./PasswordList.vue?vue&type=template&id=a99edefe& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/view/password/PasswordList.vue?vue&type=template&id=a99edefe&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PasswordList_vue_vue_type_template_id_a99edefe___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_OfficeList_vue_vue_type_template_id_04a9673e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PasswordList_vue_vue_type_template_id_a99edefe___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

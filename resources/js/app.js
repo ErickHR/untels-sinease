@@ -15,6 +15,9 @@ import * as rules from './provider/ruleValidate.js';
 window.Vue = require('vue');
 window.Alerts = new Alerts()
 
+import VueCharts from 'vue-chartjs'
+import { Bar, Line } from 'vue-chartjs'
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue

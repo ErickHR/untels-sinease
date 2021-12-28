@@ -16,5 +16,9 @@ class StatusFile extends Model
         'status'
     ];
 
+    public function file()
+    {
+        return $this->hasMany('App\File', 'status_file_id');
+    }
     
 }

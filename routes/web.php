@@ -108,5 +108,7 @@ Route::middleware(['auth'])->group(function () {
 
     Route::resource('directory', 'DirectoryController');
     Route::get('directory-mine', 'DirectoryController@mine');
+
+    Route::get('report-count-file-aproved-desaproved', 'ReportController@countFileAprovedDesaproved');
   
 });

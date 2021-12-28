@@ -6,7 +6,7 @@
         </div>
         <div class="col scroll-auto">
             
-            <dashboard-form ref="dashboardForm" @updateList="updateList" @searchItem="searchItem"></dashboard-form>
+            <dashboard-form ref="dashboardForm"></dashboard-form>
             <router-view ref="routerView"  @changeToAddRegister="changeToAddRegister" @editItem="editItem" ></router-view>
 
         </div>

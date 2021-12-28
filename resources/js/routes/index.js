@@ -153,16 +153,16 @@ const routes = [
             }
         ]
     },
-    { 
-        path: '/dashboard', 
-        component: () => import('./../view/dashboard'),
-        children : [
-            { 
-                path: '/module/list', 
-                component: () => import('./../view/dashboard/DashboardList.vue')
-            }
-        ]
-    },
+    // { 
+    //     path: '/dashboard', 
+    //     component: () => import('./../view/dashboard')
+    //     // children : [
+    //     //     { 
+    //     //         path: '/module/list', 
+    //     //         component: () => import('./../view/dashboard/DashboardList.vue')
+    //     //     }
+    //     // ]
+    // },
     { 
         path: '/*', 
         component: {

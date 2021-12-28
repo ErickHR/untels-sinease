@@ -1,52 +1,97 @@
 <template>
-    <div class="justify-content-center">
-        <div class="row justify-content-center">
-            <div class="col-lg-10 col-md-10 col-sm-10 col-10 ">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <h3 class="mb-2 title-form d-inline-block">
-                                    Dashboard
-                                </h3>
-                            </div>
-                        </div> 
-                        <div class="opciones-section mt-1 pb-2">
-                            <small class="text-muted">
-                                <strong>
-                                    Descripción:
-                                </strong> 
-                                Estas son las factores de las normas propuestas por SINEASE
-                            </small>
-                        </div> 
-                        <div class="origen-section ">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="small d-flex">
+    <line-chart :chart-data="datacollection" ></line-chart>
+    <line-chart :chart-data="datacollection1"></line-chart>
+    <polar-area-chart :chart-data="datacollection2"></polar-area-chart>
+  </div>
 </template>
 
 <script>
+  import LineChart from './DashboardForm.js'
+  import PolarAreaChart from './PolarArea.js'
 
-import Chart from 'chart.js/auto';
+  export default {
+    components: {
+      LineChart,
+      PolarAreaChart
+    },
+    data () {
+      return {
+        datacollection: null,
+        datacollection1: null,
+        datacollection2: null
+      }
+    },
+    methods: {
+      async fillData () {
 
-export default {
+          const response = await axios('report-count-file-aproved-desaproved')
 
-    extends: Bar,
-  mounted () {
-      this.renderChart({
-      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-      datasets: [
-        {
-          label: 'GitHub Commits',
-          backgroundColor: '#f87979',
-          data: [40, 20, 12, 39, 10, 40, 39, 80, 40, 20, 12, 11]
-        }
-      ]
-    })
+          let data = { ...response.data.data }
+          this.datacollection = {
+            datasets: data[0]
+          }
+
+          this.datacollection1 = {
+            datasets: data[1]
+          }
+
+          this.datacollection2 = data[2]
+
+          // this.datacollection2 = {
+          //   labels: [
+          //     'Red',
+          //     'Green',
+          //     'Yellow',
+          //     'Grey',
+          //     'Blue'
+          //   ],
+          //   datasets: [{
+          //     data: [11, 16, 7, 3, 14],
+          //     backgroundColor: [
+          //       'rgb(255, 99, 132)',
+          //       'rgb(75, 192, 192)',
+          //       'rgb(255, 205, 86)',
+          //       'rgb(201, 203, 207)',
+          //       'rgb(54, 162, 235)'
+          //     ]
+          //   },{
+          //     data: [100, 150, 20, 30, 140],
+          //     backgroundColor: [
+          //       'rgb(255, 99, 132)',
+          //       'rgb(75, 192, 192)',
+          //       'rgb(255, 205, 86)',
+          //       'rgb(201, 203, 207)',
+          //       'rgb(54, 162, 235)'
+          //     ]
+          //   },]
+          // }
+
+
+        // this.datacollection1 = {
+        //   datasets: [
+        //     {
+        //       label: 'Data One',
+        //       backgroundColor: '#f87979',
+        //       data: [5]
+        //     }, 
+        //     {
+        //       label: 'Data two',
+        //       backgroundColor: '#f87979',
+        //       data: [20]
+        //     }
+        //   ]
+        // }
+
+      }
+    },
+    mounted () {
+      this.fillData()
+    }
   }
-
-}
 </script>
+<style>
+  .small {
+    margin:  150px auto;
+  }
+</style>

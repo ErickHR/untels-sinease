@@ -111,6 +111,12 @@ class WithUtils {
         ];
     }
 
+    public static function statusFile(){
+        return [
+            'file'
+        ];
+    }
+
 }
 
 ?>
