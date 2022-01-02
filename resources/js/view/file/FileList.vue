@@ -227,7 +227,7 @@ export default {
                         
                         if( file.file_description.length != 0 ) {
                             _this.listHtml += `
-                                            <div class="dropdown-item tdShowDescription" data-id="${ file.id }" > VER COMENTARIO </div>
+                                            <div class="dropdown-item tdShowDescription" data-id="${ file.id }" > VER COMENTARIO  prueba</div>
                                     `
                         }
                             _this.listHtml += `
