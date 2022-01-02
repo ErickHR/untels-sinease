@@ -3,7 +3,7 @@
     <div class="row mx-0">
         <div>
             <nav-bar-component></nav-bar-component>
-        </div>
+        </div> 
         <!-- <div class="col scroll-auto">
             <file-form ref="fileForm" 
                 @updateList="updateList" 
