@@ -179,7 +179,7 @@ export default {
                         if( file.file_description.length != 0 ) {
                             _this.listHtml += `
                                 
-                                            <div class="dropdown-item tdShowDescription" data-id="${ file.id }"  > VER COMENTARIO </div>
+                                            <div class="dropdown-item tdShowDescription" data-id="${ file.id }"  > VER COMENTARIO prueba </div>
                                         `
                         }
 
@@ -222,7 +222,7 @@ export default {
                                                 <i class="fas fa-ellipsis-v"></i>
                                                 </a>
                                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                                <div class="dropdown-item tdShowDescription" data-id="${ file.id }"  > ELIMINAR </div>
+                                                    <div class="dropdown-item tdShowDescription" data-id="${ file.id }"  > ELIMINAR </div>
                                         `
                         
                         if( file.file_description.length != 0 ) {
