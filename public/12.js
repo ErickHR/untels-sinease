@@ -706,7 +706,7 @@ var render = function () {
                             _vm._v(
                               "\n                                        " +
                                 _vm._s(
-                                  data.standar.name
+                                  data.standar
                                     ? data.standar.name
                                     :  true
                                     ? data.standar.factor.name

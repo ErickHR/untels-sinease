@@ -56,7 +56,7 @@
                                     </td> 
                                     <td class="text-muted">
                                         <b>
-                                            {{ data.standar.name ? data.standar.name : '' +' / ' + data.standar.factor.name ? data.standar.factor.name : '' }}
+                                            {{ data.standar ? data.standar.name : '' +' / ' + data.standar ? data.standar.factor.name : '' }}
                                         </b>
                                     </td> 
                                     <td class="text-muted"> 
