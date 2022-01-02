@@ -167,20 +167,27 @@ export default {
                                         <i class="far fa-file-pdf fa-2x"></i>
                                     </a>
                                 </td>`
-                        if( file.file_description.length != 0 ) {
-                            _this.listHtml += `
+                                _this.listHtml += `
                                 <td class="text-right">
                                     <div class="dropdown">
                                         <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <i class="fas fa-ellipsis-v"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                            <div class="dropdown-item tdShowDescription" data-id="${ file.id }"  > VER COMENTARIO </div>
-                                        </div>
-                                    </div>
-                                </td>`
-                        }
+                                            <div class="dropdown-item tdShowDescription" data-id="${ file.id }"  > ELIMINAR </div>
+                                            `
+                        if( file.file_description.length != 0 ) {
+                            _this.listHtml += `
                                 
+                                            <div class="dropdown-item tdShowDescription" data-id="${ file.id }"  > VER COMENTARIO </div>
+                                        `
+                        }
+
+                            _this.listHtml += `
+                                            </div>
+                                        </div>
+                                    </td>`
+                                    
                         _this.listHtml += `
                                 </tr>
                             `
@@ -207,19 +214,26 @@ export default {
                                             <i class="far fa-file-pdf fa-2x"></i>
                                         </a>
                                     </td>`
+
+                                     _this.listHtml += `
+                                        <td class="text-right">
+                                            <div class="dropdown">
+                                                <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                                <div class="dropdown-item tdShowDescription" data-id="${ file.id }"  > ELIMINAR </div>
+                                        `
+                        
                         if( file.file_description.length != 0 ) {
                             _this.listHtml += `
-                                <td class="text-right">
-                                    <div class="dropdown">
-                                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fas fa-ellipsis-v"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                             <div class="dropdown-item tdShowDescription" data-id="${ file.id }" > VER COMENTARIO </div>
+                                    `
+                        }
+                            _this.listHtml += `
                                         </div>
                                     </div>
                                 </td>`
-                        }
                                     
                         _this.listHtml += `
                                 </tr>
@@ -274,7 +288,7 @@ export default {
                     status
                 }
 
-                const response = await axios.post( `standar-active-desactive`, body )
+                const response = await axios.post( `file-active-desactive`, body )
                 
                 if( response.status == 200 ) {
 
