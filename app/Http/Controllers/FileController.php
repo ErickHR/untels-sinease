@@ -195,7 +195,7 @@ class FileController extends Controller
 
         File::findOrFail( $request->id )->update( 
             [
-                'status' => $request->status
+                'status' => false
             ]
         );
         
