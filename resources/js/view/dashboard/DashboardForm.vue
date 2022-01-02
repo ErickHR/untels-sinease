@@ -93,5 +93,7 @@
 <style>
   .small {
     margin:  150px auto;
+    flex-wrap: wrap;
+    width: min-content;
   }
 </style>
