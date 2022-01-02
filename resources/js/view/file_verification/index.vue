@@ -4,7 +4,7 @@
         <div>
             <nav-bar-component></nav-bar-component>
         </div> 
-        <!-- <div class="col scroll-auto">
+        <div class="col scroll-auto">
             <file-form ref="fileForm" 
                 @updateList="updateList" 
                 @searchItem="searchItem"
@@ -14,7 +14,7 @@
                 @editItem="editItem" 
             ></router-view>
         
-        </div> -->
+        </div>
     </div>
     <!-- </div> -->
 </template>
@@ -22,12 +22,12 @@
 
 <script>
 
-// import FileForm from './FileForm.vue';
+import FileForm from './FileForm.vue';
 import NavBarComponent from './../../components/NavBarComponent.vue';
 
 export default {
     components : {
-    //     FileForm,
+        FileForm,
         NavBarComponent
     },
 
