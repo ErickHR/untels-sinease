@@ -99142,163 +99142,163 @@ var routes = [{
   path: '/',
   name: 'home',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(32)]).then(__webpack_require__.bind(null, /*! ./../view/index.vue */ "./resources/js/view/index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(31)]).then(__webpack_require__.bind(null, /*! ./../view/index.vue */ "./resources/js/view/index.vue"));
   }
 }, {
   path: '/standar',
   name: 'standar',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(19)]).then(__webpack_require__.bind(null, /*! ./../view/standar */ "./resources/js/view/standar/index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(18)]).then(__webpack_require__.bind(null, /*! ./../view/standar */ "./resources/js/view/standar/index.vue"));
   },
   children: [{
     path: '/standar/list',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 31).then(__webpack_require__.bind(null, /*! ./../view/standar/StandarList.vue */ "./resources/js/view/standar/StandarList.vue"));
+      return __webpack_require__.e(/*! import() */ 30).then(__webpack_require__.bind(null, /*! ./../view/standar/StandarList.vue */ "./resources/js/view/standar/StandarList.vue"));
     }
   }]
 }, {
   path: '/office',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(15)]).then(__webpack_require__.bind(null, /*! ./../view/office */ "./resources/js/view/office/index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(14)]).then(__webpack_require__.bind(null, /*! ./../view/office */ "./resources/js/view/office/index.vue"));
   },
   children: [{
     path: '/office/list',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 25).then(__webpack_require__.bind(null, /*! ./../view/office/OfficeList.vue */ "./resources/js/view/office/OfficeList.vue"));
+      return __webpack_require__.e(/*! import() */ 24).then(__webpack_require__.bind(null, /*! ./../view/office/OfficeList.vue */ "./resources/js/view/office/OfficeList.vue"));
     }
   }]
 }, {
   path: '/factor',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(14)]).then(__webpack_require__.bind(null, /*! ./../view/factor */ "./resources/js/view/factor/index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(13)]).then(__webpack_require__.bind(null, /*! ./../view/factor */ "./resources/js/view/factor/index.vue"));
   },
   children: [{
     path: '/factor/list',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 22).then(__webpack_require__.bind(null, /*! ./../view/factor/FactorList.vue */ "./resources/js/view/factor/FactorList.vue"));
+      return __webpack_require__.e(/*! import() */ 21).then(__webpack_require__.bind(null, /*! ./../view/factor/FactorList.vue */ "./resources/js/view/factor/FactorList.vue"));
     }
   }]
 }, {
   path: '/dimension',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ./../view/dimension */ "./resources/js/view/dimension/index.vue"));
+    return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ./../view/dimension */ "./resources/js/view/dimension/index.vue"));
   },
   children: [{
     path: '/dimension/list',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 20).then(__webpack_require__.bind(null, /*! ./../view/dimension/DimensionList.vue */ "./resources/js/view/dimension/DimensionList.vue"));
+      return __webpack_require__.e(/*! import() */ 19).then(__webpack_require__.bind(null, /*! ./../view/dimension/DimensionList.vue */ "./resources/js/view/dimension/DimensionList.vue"));
     }
   }]
 }, {
   path: '/file',
   name: 'file',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(10)]).then(__webpack_require__.bind(null, /*! ./../view/file */ "./resources/js/view/file/index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(9)]).then(__webpack_require__.bind(null, /*! ./../view/file */ "./resources/js/view/file/index.vue"));
   },
   children: [{
     path: '/file/list',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 12).then(__webpack_require__.bind(null, /*! ./../view/file/FileList.vue */ "./resources/js/view/file/FileList.vue"));
+      return __webpack_require__.e(/*! import() */ 11).then(__webpack_require__.bind(null, /*! ./../view/file/FileList.vue */ "./resources/js/view/file/FileList.vue"));
     }
   }]
 }, {
   path: '/directory',
   name: 'directory',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ./../view/directory */ "./resources/js/view/directory/index.vue"));
+    return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ./../view/directory */ "./resources/js/view/directory/index.vue"));
   },
   children: [{
     path: '/directory/list',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 21).then(__webpack_require__.bind(null, /*! ./../view/directory/DirectoryList.vue */ "./resources/js/view/directory/DirectoryList.vue"));
+      return __webpack_require__.e(/*! import() */ 20).then(__webpack_require__.bind(null, /*! ./../view/directory/DirectoryList.vue */ "./resources/js/view/directory/DirectoryList.vue"));
     }
   }]
 }, {
   path: '/file-status',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ./../view/file_status */ "./resources/js/view/file_status/index.vue"));
+    return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ./../view/file_status */ "./resources/js/view/file_status/index.vue"));
   },
   children: [{
     path: '/file-status/list',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 23).then(__webpack_require__.bind(null, /*! ./../view/file_status/FileStatusList.vue */ "./resources/js/view/file_status/FileStatusList.vue"));
+      return __webpack_require__.e(/*! import() */ 22).then(__webpack_require__.bind(null, /*! ./../view/file_status/FileStatusList.vue */ "./resources/js/view/file_status/FileStatusList.vue"));
     }
   }]
 }, {
   path: '/file-verification',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(11)]).then(__webpack_require__.bind(null, /*! ./../view/file_verification */ "./resources/js/view/file_verification/index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(10)]).then(__webpack_require__.bind(null, /*! ./../view/file_verification */ "./resources/js/view/file_verification/index.vue"));
   },
   children: [{
     path: '/file-verification/list',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 13).then(__webpack_require__.bind(null, /*! ./../view/file_verification/FileList.vue */ "./resources/js/view/file_verification/FileList.vue"));
+      return __webpack_require__.e(/*! import() */ 12).then(__webpack_require__.bind(null, /*! ./../view/file_verification/FileList.vue */ "./resources/js/view/file_verification/FileList.vue"));
     }
   }]
 }, {
   path: '/position',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(18)]).then(__webpack_require__.bind(null, /*! ./../view/position */ "./resources/js/view/position/index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(17)]).then(__webpack_require__.bind(null, /*! ./../view/position */ "./resources/js/view/position/index.vue"));
   },
   children: [{
     path: '/position/list',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 29).then(__webpack_require__.bind(null, /*! ./../view/position/PositionList.vue */ "./resources/js/view/position/PositionList.vue"));
+      return __webpack_require__.e(/*! import() */ 28).then(__webpack_require__.bind(null, /*! ./../view/position/PositionList.vue */ "./resources/js/view/position/PositionList.vue"));
     }
   }]
 }, {
   path: '/person',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(17)]).then(__webpack_require__.bind(null, /*! ./../view/person */ "./resources/js/view/person/index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(16)]).then(__webpack_require__.bind(null, /*! ./../view/person */ "./resources/js/view/person/index.vue"));
   },
   children: [{
     path: '/person/list',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 28).then(__webpack_require__.bind(null, /*! ./../view/person/PersonList.vue */ "./resources/js/view/person/PersonList.vue"));
+      return __webpack_require__.e(/*! import() */ 27).then(__webpack_require__.bind(null, /*! ./../view/person/PersonList.vue */ "./resources/js/view/person/PersonList.vue"));
     }
   }]
 }, {
   path: '/rol',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! ./../view/rol */ "./resources/js/view/rol/index.vue"));
+    return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! ./../view/rol */ "./resources/js/view/rol/index.vue"));
   },
   children: [{
     path: '/rol/list',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 30).then(__webpack_require__.bind(null, /*! ./../view/rol/RolList.vue */ "./resources/js/view/rol/RolList.vue"));
+      return __webpack_require__.e(/*! import() */ 29).then(__webpack_require__.bind(null, /*! ./../view/rol/RolList.vue */ "./resources/js/view/rol/RolList.vue"));
     }
   }]
 }, {
   path: '/permission',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(16)]).then(__webpack_require__.bind(null, /*! ./../view/permission */ "./resources/js/view/permission/index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(15)]).then(__webpack_require__.bind(null, /*! ./../view/permission */ "./resources/js/view/permission/index.vue"));
   },
   children: [{
     path: '/permission/list',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 27).then(__webpack_require__.bind(null, /*! ./../view/permission/PermissionList.vue */ "./resources/js/view/permission/PermissionList.vue"));
+      return __webpack_require__.e(/*! import() */ 26).then(__webpack_require__.bind(null, /*! ./../view/permission/PermissionList.vue */ "./resources/js/view/permission/PermissionList.vue"));
     }
   }]
 }, {
   path: '/module',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! ./../view/module */ "./resources/js/view/module/index.vue"));
+    return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ./../view/module */ "./resources/js/view/module/index.vue"));
   },
   children: [{
     path: '/module/list',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 24).then(__webpack_require__.bind(null, /*! ./../view/module/ModuleList.vue */ "./resources/js/view/module/ModuleList.vue"));
+      return __webpack_require__.e(/*! import() */ 23).then(__webpack_require__.bind(null, /*! ./../view/module/ModuleList.vue */ "./resources/js/view/module/ModuleList.vue"));
     }
   }]
 }, {
   path: '/change-password',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! ./../view/password */ "./resources/js/view/password/index.vue"));
+    return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! ./../view/password */ "./resources/js/view/password/index.vue"));
   },
   children: [{
     path: '/module/list',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 26).then(__webpack_require__.bind(null, /*! ./../view/password/PasswordList.vue */ "./resources/js/view/password/PasswordList.vue"));
+      return __webpack_require__.e(/*! import() */ 25).then(__webpack_require__.bind(null, /*! ./../view/password/PasswordList.vue */ "./resources/js/view/password/PasswordList.vue"));
     }
   }]
 }, // { 
