@@ -85,7 +85,7 @@ const routes = [
     },
     { 
         path: '/file-verification', 
-        component: () => import('./../view/file_verification'),
+        component: () => import('./../view/file_verification/index.vue'),
         // children : [
         //     { 
         //         path: '/file-verification/list', 

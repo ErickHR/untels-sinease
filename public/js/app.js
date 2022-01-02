@@ -99227,7 +99227,7 @@ var routes = [{
 }, {
   path: '/file-verification',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ./../view/file_verification */ "./resources/js/view/file_verification/index.vue"));
+    return __webpack_require__.e(/*! import() */ 10).then(__webpack_require__.bind(null, /*! ./../view/file_verification/index.vue */ "./resources/js/view/file_verification/index.vue"));
   } // children : [
   //     { 
   //         path: '/file-verification/list', 
