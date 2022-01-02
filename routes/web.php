@@ -96,6 +96,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('dimension-search', 'DimensionController@search');
 
     Route::resource('file', 'FileController');
+    Route::post('file-active-desactive', 'FileController@activeDesactive');
     Route::post('file-search', 'FileController@search');
     Route::post('file-change-status', 'FileController@changeStatus');
     Route::get('file-show', 'FileController@fileShow');

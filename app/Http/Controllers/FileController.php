@@ -190,6 +190,19 @@ class FileController extends Controller
 
     }
 
+    public function activeDesactive( Request $request )
+    {
+
+        File::findOrFail( $request->id )->update( 
+            [
+                'status' => $request->status
+            ]
+        );
+        
+        return response( [ 'msg' => $request->status ? "Activado" : "Desactivado", 'value' => true, "data" => null ], 200 );
+
+    }
+
     public function getFile()
     {
         
