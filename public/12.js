@@ -492,8 +492,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       return status ? 'ACTIVO' : 'DESACTIVADO';
     }
   },
-  mounted: function mounted() {// this.getApiList()
-    // this.getStatusFile()
+  mounted: function mounted() {
+    this.getApiList();
+    this.getStatusFile();
   }
 });
 
