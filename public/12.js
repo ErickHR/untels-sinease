@@ -597,9 +597,392 @@ render._withStripped = true
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/view/file_verification/FileList.vue?vue&type=template&id=3f394a67& ***!
   \***********************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/vue-loader/lib/loaders/templateLoader.js):\nSyntaxError: Unexpected token (1:1696)\n    at Parser.pp$4.raise (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:2757:13)\n    at Parser.pp.unexpected (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:647:8)\n    at Parser.pp$3.parseExprAtom (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:2196:10)\n    at Parser.<anonymous> (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:6003:24)\n    at Parser.parseExprAtom (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:6129:31)\n    at Parser.pp$3.parseExprSubscripts (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:2047:19)\n    at Parser.pp$3.parseMaybeUnary (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:2024:17)\n    at Parser.pp$3.parseExprOps (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:1966:19)\n    at Parser.pp$3.parseMaybeConditional (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:1949:19)\n    at Parser.pp$3.parseMaybeAssign (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:1925:19)\n    at Parser.pp$3.parseMaybeConditional (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:1954:28)\n    at Parser.pp$3.parseMaybeAssign (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:1925:19)\n    at Parser.pp$3.parseExprList (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:2663:20)\n    at Parser.pp$3.parseSubscripts (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:2075:29)\n    at Parser.pp$3.parseExprSubscripts (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:2050:21)\n    at Parser.pp$3.parseMaybeUnary (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:2024:17)\n    at Parser.pp$3.parseExprOp (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:1985:41)\n    at Parser.pp$3.parseExprOps (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:1968:91)\n    at Parser.pp$3.parseMaybeConditional (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:1949:19)\n    at Parser.pp$3.parseMaybeAssign (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:1925:19)\n    at Parser.pp$3.parseExprList (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:2663:20)\n    at Parser.pp$3.parseSubscripts (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:2075:29)\n    at Parser.pp$3.parseExprSubscripts (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:2050:21)\n    at Parser.pp$3.parseMaybeUnary (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:2024:17)\n    at Parser.pp$3.parseExprOps (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:1966:19)\n    at Parser.pp$3.parseMaybeConditional (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:1949:19)\n    at Parser.pp$3.parseMaybeAssign (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:1925:19)\n    at Parser.pp$3.parseExprList (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:2663:20)\n    at Parser.pp$3.parseExprAtom (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:2175:26)\n    at Parser.<anonymous> (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:6003:24)\n    at Parser.parseExprAtom (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:6129:31)\n    at Parser.pp$3.parseExprSubscripts (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:2047:19)\n    at Parser.pp$3.parseMaybeUnary (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:2024:17)\n    at Parser.pp$3.parseExprOps (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:1966:19)\n    at Parser.pp$3.parseMaybeConditional (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:1949:19)\n    at Parser.pp$3.parseMaybeAssign (C:\\Users\\asus\\Documents\\untels\\2021-II\\Gestión de Proyecto de TI\\archivos\\untels-sinease\\node_modules\\vue-template-es2015-compiler\\buble.js:1925:19)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "justify-content-center" },
+    [
+      _c("div", { staticClass: "row justify-content-center" }, [
+        _c("div", { staticClass: "col-lg-10 col-md-10 col-sm-10 col-10 " }, [
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "card-header border-0" }, [
+              _c("div", { staticClass: "row" }, [
+                _vm._m(0),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "text-sm-right col-12 col-sm-9 mt-sm-0 mt-2" },
+                  [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-sm btn-success btn-icon",
+                        attrs: { type: "button" },
+                        on: { click: _vm.changeToAddRegister },
+                      },
+                      [
+                        _vm._m(1),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "btn-inner--text" }, [
+                          _vm._v(
+                            "\n                                        Agregar registro\n                                    "
+                          ),
+                        ]),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-sm btn-primary btn-icon",
+                        attrs: { type: "button" },
+                        on: { click: _vm.dowloandAllFiles },
+                      },
+                      [
+                        _vm._m(2),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "btn-inner--text" }, [
+                          _vm._v(
+                            "\n                                        Descargar archivos\n                                    "
+                          ),
+                        ]),
+                      ]
+                    ),
+                  ]
+                ),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "table-responsive" }, [
+              _c(
+                "table",
+                {
+                  staticClass:
+                    "table align-items-center table-flush table-hover",
+                },
+                [
+                  _vm._m(3),
+                  _vm._v(" "),
+                  _c(
+                    "tbody",
+                    _vm._l(_vm.dataList, function (data, index) {
+                      return _c("tr", { key: index, staticClass: "list" }, [
+                        _c("td", { staticClass: "text-muted" }, [
+                          _c("b", [_vm._v(_vm._s(data.name))]),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "text-muted" }, [
+                          _c(
+                            "div",
+                            {
+                              staticClass: "btn-sm",
+                              staticStyle: { color: "white" },
+                              style: "background:" + data.status_file.color,
+                            },
+                            [
+                              _c("center", [
+                                _vm._v(
+                                  "\n                                            " +
+                                    _vm._s(data.status_file.name) +
+                                    "\n                                        "
+                                ),
+                              ]),
+                            ],
+                            1
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "text-muted" }, [
+                          _c("b", [
+                            _vm._v(
+                              "\n                                        " +
+                                _vm._s(
+                                  data.standar.name
+                                    ? data.standar.name
+                                    :  true
+                                    ? data.standar.factor.name
+                                    : undefined
+                                ) +
+                                "\n                                    "
+                            ),
+                          ]),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "text-muted" }, [
+                          _c(
+                            "a",
+                            {
+                              attrs: {
+                                href: "http://127.0.0.1:8000/" + data.url,
+                                target: "_blank",
+                                rel: "noopener noreferrer",
+                              },
+                            },
+                            [_c("i", { staticClass: "far fa-file-pdf fa-2x" })]
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "text-muted" }, [
+                          _c("b", [
+                            _vm._v(
+                              "\n                                        " +
+                                _vm._s(
+                                  data.user.person.full_name +
+                                    " / " +
+                                    data.user.person.position.name
+                                ) +
+                                "\n                                    "
+                            ),
+                          ]),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "text-right" }, [
+                          _c("div", { staticClass: "dropdown" }, [
+                            _vm._m(4, true),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "dropdown-menu dropdown-menu-right dropdown-menu-arrow",
+                              },
+                              _vm._l(
+                                _vm.dataStatusList,
+                                function (statusData, index) {
+                                  return _c(
+                                    "div",
+                                    {
+                                      key: index,
+                                      staticClass: "dropdown-item",
+                                      on: {
+                                        click: function ($event) {
+                                          return _vm.changeStatus(
+                                            statusData,
+                                            data
+                                          )
+                                        },
+                                      },
+                                    },
+                                    [
+                                      _vm._v(
+                                        " " + _vm._s(statusData.name) + " "
+                                      ),
+                                    ]
+                                  )
+                                }
+                              ),
+                              0
+                            ),
+                          ]),
+                        ]),
+                      ])
+                    }),
+                    0
+                  ),
+                ]
+              ),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-footer py-4" }),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("modal-component", {
+        ref: "modalComponent",
+        on: { dataForm: _vm.getDataForm, save: _vm.saveRegisterByModal },
+        scopedSlots: _vm._u([
+          {
+            key: "header",
+            fn: function () {
+              return [_c("h1", [_vm._v("DESCRIPCIÓN")])]
+            },
+            proxy: true,
+          },
+          {
+            key: "default",
+            fn: function (modalSlotPropsDefault) {
+              return [
+                _c("form", [
+                  _c("textarea", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: modalSlotPropsDefault.dataForm.description,
+                        expression:
+                          "modalSlotPropsDefault.dataForm.description",
+                      },
+                    ],
+                    staticClass: "form-control",
+                    attrs: { rows: "3", placeholder: "DESCRIPCIÓN" },
+                    domProps: {
+                      value: modalSlotPropsDefault.dataForm.description,
+                    },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(
+                          modalSlotPropsDefault.dataForm,
+                          "description",
+                          $event.target.value
+                        )
+                      },
+                    },
+                  }),
+                ]),
+              ]
+            },
+          },
+          {
+            key: "footer",
+            fn: function () {
+              return [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-secondary",
+                    attrs: { type: "button", "data-dismiss": "modal" },
+                  },
+                  [_vm._v("CERRAR")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-primary",
+                    attrs: { type: "button" },
+                    on: {
+                      click: function ($event) {
+                        return _vm.$refs.modalComponent.save()
+                      },
+                    },
+                  },
+                  [_vm._v("GUARDAR")]
+                ),
+              ]
+            },
+            proxy: true,
+          },
+        ]),
+      }),
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-12 col-sm-3" }, [
+      _c("h3", { staticClass: "title-form" }, [
+        _vm._v("Lista de Categorias de Standar"),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", { staticClass: "btn-inner--icon" }, [
+      _c("i", { staticClass: "fas fa-plus" }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", { staticClass: "btn-inner--icon" }, [
+      _c("i", { staticClass: "fa-w-20 fa-9px fas fa-file-pdf" }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", { staticClass: "thead-light" }, [
+      _c("tr", [
+        _c(
+          "th",
+          { staticClass: "sort", attrs: { scope: "col", "data-sort": "name" } },
+          [_vm._v("NOMBRE")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass: "sort",
+            attrs: { scope: "col", "data-sort": "budget" },
+          },
+          [_vm._v("ESTADO")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass: "sort",
+            attrs: { scope: "col", "data-sort": "budget" },
+          },
+          [_vm._v("STANDAR")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass: "sort",
+            attrs: { scope: "col", "data-sort": "budget" },
+          },
+          [_vm._v("DOCUMENTO")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass: "sort",
+            attrs: { scope: "col", "data-sort": "budget" },
+          },
+          [_vm._v("USUARIO")]
+        ),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass: "btn btn-sm btn-icon-only text-light",
+        attrs: {
+          href: "#",
+          role: "button",
+          "data-toggle": "dropdown",
+          "aria-haspopup": "true",
+          "aria-expanded": "false",
+        },
+      },
+      [_c("i", { staticClass: "fas fa-ellipsis-v" })]
+    )
+  },
+]
+render._withStripped = true
+
+
 
 /***/ }),
 
