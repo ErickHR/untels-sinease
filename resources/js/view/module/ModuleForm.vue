@@ -16,7 +16,7 @@
                                 <strong>
                                     Descripción:
                                 </strong> 
-                                Estas son las categorias de las normas propuestas por SINEASE
+                                Estas son las categorias de las normas propuestas por SINEACE
                             </small>
                         </div> 
                         <div class="origen-section ">

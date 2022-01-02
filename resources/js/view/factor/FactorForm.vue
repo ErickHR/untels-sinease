@@ -16,7 +16,7 @@
                                 <strong>
                                     Descripción:
                                 </strong> 
-                                Estas son las factores de las normas propuestas por SINEASE
+                                Estas son las factores de las normas propuestas por SINEACE
                             </small>
                         </div> 
                         <div class="origen-section ">
