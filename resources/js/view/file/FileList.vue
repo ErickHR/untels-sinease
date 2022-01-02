@@ -134,6 +134,7 @@ export default {
         async actionGetDataHtml(){
             this.dataList = []
             $(".tdShowDescription").off('click'); 
+            $(".tdDeleteItem").off('click');
 
             this.listHtml = ``
             await this.getApiList()
@@ -174,12 +175,12 @@ export default {
                                         <i class="fas fa-ellipsis-v"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                            <div class="dropdown-item tdShowDescription" data-id="${ file.id }"  > ELIMINAR </div>
+                                            <div class="dropdown-item tdDeleteItem" data-id="${ file.id }"  > ELIMINAR </div>
                                             `
                         if( file.file_description.length != 0 ) {
                             _this.listHtml += `
                                 
-                                            <div class="dropdown-item tdShowDescription" data-id="${ file.id }"  > VER COMENTARIO prueba </div>
+                                            <div class="dropdown-item tdShowDescription" data-id="${ file.id }"  > VER COMENTARIO</div>
                                         `
                         }
 
@@ -222,12 +223,12 @@ export default {
                                                 <i class="fas fa-ellipsis-v"></i>
                                                 </a>
                                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                                    <div class="dropdown-item tdShowDescription" data-id="${ file.id }"  > ELIMINAR </div>
+                                                    <div class="dropdown-item tdDeleteItem" data-id="${ file.id }"  > ELIMINAR </div>
                                         `
                         
                         if( file.file_description.length != 0 ) {
                             _this.listHtml += `
-                                            <div class="dropdown-item tdShowDescription" data-id="${ file.id }" > VER COMENTARIO  prueba</div>
+                                            <div class="dropdown-item tdShowDescription" data-id="${ file.id }" > VER COMENTARIO</div>
                                     `
                         }
                             _this.listHtml += `
@@ -253,7 +254,14 @@ export default {
                     
                     _this.showDescriptionStatus( $(this).data('id') )
 
+                })
+
+                 $('.tdDeleteItem').on('click', function(event) {
+                    
+                    _this.activeOrDesactiveItem( $(this).data('id') )
+
                 }) 
+                
             }, 2000);
 
         },
@@ -296,7 +304,7 @@ export default {
 
                         await Alerts.success( response.data.msg )
 
-                        this.getApiList()
+                        this.actionGetDataHtml()
 
                     } else {
 

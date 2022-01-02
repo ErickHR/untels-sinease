@@ -225,21 +225,22 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               case 0:
                 _this2.dataList = [];
                 $(".tdShowDescription").off('click');
+                $(".tdDeleteItem").off('click');
                 _this2.listHtml = "";
-                _context.next = 5;
+                _context.next = 6;
                 return _this2.getApiList();
 
-              case 5:
+              case 6:
                 _this = _this2;
-                _context.next = 8;
+                _context.next = 9;
                 return _this.dataList;
 
-              case 8:
+              case 9:
                 _context.t0 = _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.keys(_context.sent);
 
-              case 9:
+              case 10:
                 if ((_context.t1 = _context.t0()).done) {
-                  _context.next = 15;
+                  _context.next = 16;
                   break;
                 }
 
@@ -251,20 +252,20 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                     var _file$status_file, _file$standar, _file$standar2, _file$standar2$factor;
 
                     _this.listHtml += "\n                                <td>".concat(file.name, "</td>\n                                <td class=\"text-muted\">\n                                    <div class=\"btn-sm\" style=\"background:").concat(file.status_file.color, ";color:white;\" >\n                                        <center>\n                                            ").concat(file === null || file === void 0 ? void 0 : (_file$status_file = file.status_file) === null || _file$status_file === void 0 ? void 0 : _file$status_file.name, "\n                                        </center>\n                                    </div>\n                                </td> \n                                <td class=\"text-muted\">\n                                    <b>\n                                        ").concat((file === null || file === void 0 ? void 0 : (_file$standar = file.standar) === null || _file$standar === void 0 ? void 0 : _file$standar.name) + ' / ' + (file === null || file === void 0 ? void 0 : (_file$standar2 = file.standar) === null || _file$standar2 === void 0 ? void 0 : (_file$standar2$factor = _file$standar2.factor) === null || _file$standar2$factor === void 0 ? void 0 : _file$standar2$factor.name), "\n                                    </b>\n                                </td>\n                                <td class=\"text-muted\"> \n                                    <a href=\"").concat(window.location.origin, "/").concat(file.url, "\" target=\"_blank\" rel=\"noopener noreferrer\">\n                                        <i class=\"far fa-file-pdf fa-2x\"></i>\n                                    </a>\n                                </td>");
-                    _this.listHtml += "\n                                <td class=\"text-right\">\n                                    <div class=\"dropdown\">\n                                        <a class=\"btn btn-sm btn-icon-only text-light\" href=\"#\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n                                        <i class=\"fas fa-ellipsis-v\"></i>\n                                        </a>\n                                        <div class=\"dropdown-menu dropdown-menu-right dropdown-menu-arrow\">\n                                            <div class=\"dropdown-item tdShowDescription\" data-id=\"".concat(file.id, "\"  > ELIMINAR </div>\n                                            ");
+                    _this.listHtml += "\n                                <td class=\"text-right\">\n                                    <div class=\"dropdown\">\n                                        <a class=\"btn btn-sm btn-icon-only text-light\" href=\"#\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n                                        <i class=\"fas fa-ellipsis-v\"></i>\n                                        </a>\n                                        <div class=\"dropdown-menu dropdown-menu-right dropdown-menu-arrow\">\n                                            <div class=\"dropdown-item tdDeleteItem\" data-id=\"".concat(file.id, "\"  > ELIMINAR </div>\n                                            ");
 
                     if (file.file_description.length != 0) {
-                      _this.listHtml += "\n                                \n                                            <div class=\"dropdown-item tdShowDescription\" data-id=\"".concat(file.id, "\"  > VER COMENTARIO prueba </div>\n                                        ");
+                      _this.listHtml += "\n                                \n                                            <div class=\"dropdown-item tdShowDescription\" data-id=\"".concat(file.id, "\"  > VER COMENTARIO</div>\n                                        ");
                     }
 
                     _this.listHtml += "\n                                            </div>\n                                        </div>\n                                    </td>";
                     _this.listHtml += "\n                                </tr>\n                            ";
                   } else {
                     _this.listHtml += "\n                                <tr>\n                                    <td>".concat(file.name, "</td>\n                                    <td class=\"text-muted\">\n                                        <div class=\"btn-sm\" style=\"background:").concat(file.status_file.color, ";color:white;\" >\n                                            <center>\n                                                ").concat(file.status_file.name, "\n                                            </center>\n                                        </div>\n                                    </td> \n                                    <td class=\"text-muted\">\n                                        <b>\n                                            ").concat(file.standar.name + ' / ' + file.standar.factor.name, "\n                                        </b>\n                                    </td>\n                                    <td class=\"text-muted\"> \n                                        <a href=\"").concat(window.location.origin, "/").concat(file.url, "\" target=\"_blank\" rel=\"noopener noreferrer\">\n                                            <i class=\"far fa-file-pdf fa-2x\"></i>\n                                        </a>\n                                    </td>");
-                    _this.listHtml += "\n                                        <td class=\"text-right\">\n                                            <div class=\"dropdown\">\n                                                <a class=\"btn btn-sm btn-icon-only text-light\" href=\"#\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n                                                <i class=\"fas fa-ellipsis-v\"></i>\n                                                </a>\n                                                <div class=\"dropdown-menu dropdown-menu-right dropdown-menu-arrow\">\n                                                    <div class=\"dropdown-item tdShowDescription\" data-id=\"".concat(file.id, "\"  > ELIMINAR </div>\n                                        ");
+                    _this.listHtml += "\n                                        <td class=\"text-right\">\n                                            <div class=\"dropdown\">\n                                                <a class=\"btn btn-sm btn-icon-only text-light\" href=\"#\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n                                                <i class=\"fas fa-ellipsis-v\"></i>\n                                                </a>\n                                                <div class=\"dropdown-menu dropdown-menu-right dropdown-menu-arrow\">\n                                                    <div class=\"dropdown-item tdDeleteItem\" data-id=\"".concat(file.id, "\"  > ELIMINAR </div>\n                                        ");
 
                     if (file.file_description.length != 0) {
-                      _this.listHtml += "\n                                            <div class=\"dropdown-item tdShowDescription\" data-id=\"".concat(file.id, "\" > VER COMENTARIO  prueba</div>\n                                    ");
+                      _this.listHtml += "\n                                            <div class=\"dropdown-item tdShowDescription\" data-id=\"".concat(file.id, "\" > VER COMENTARIO</div>\n                                    ");
                     }
 
                     _this.listHtml += "\n                                        </div>\n                                    </div>\n                                </td>";
@@ -272,18 +273,21 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   }
                 });
 
-                _context.next = 9;
+                _context.next = 10;
                 break;
 
-              case 15:
+              case 16:
                 Alerts.success('Cargando....');
                 setTimeout(function () {
                   $('.tdShowDescription').on('click', function (event) {
                     _this.showDescriptionStatus($(this).data('id'));
                   });
+                  $('.tdDeleteItem').on('click', function (event) {
+                    _this.activeOrDesactiveItem($(this).data('id'));
+                  });
                 }, 2000);
 
-              case 17:
+              case 18:
               case "end":
                 return _context.stop();
             }
@@ -375,7 +379,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 return Alerts.success(response.data.msg);
 
               case 9:
-                _this5.getApiList();
+                _this5.actionGetDataHtml();
 
                 _context4.next = 13;
                 break;
