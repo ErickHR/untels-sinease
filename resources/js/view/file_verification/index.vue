@@ -23,13 +23,13 @@
 <script>
 
 // import FileForm from './FileForm.vue';
-// import NavBarComponent from './../../components/NavBarComponent.vue';
+import NavBarComponent from './../../components/NavBarComponent.vue';
 
 export default {
-    // components : {
+    components : {
     //     FileForm,
-    //     NavBarComponent
-    // },
+        NavBarComponent
+    },
 
     data() {
         return {
