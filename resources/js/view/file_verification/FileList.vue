@@ -298,8 +298,8 @@ export default {
 
     mounted() {
         
-        this.getApiList()
-        this.getStatusFile()
+        // this.getApiList()
+        // this.getStatusFile()
 
     },
 
