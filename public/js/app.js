@@ -99148,7 +99148,7 @@ var routes = [{
   path: '/standar',
   name: 'standar',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(18)]).then(__webpack_require__.bind(null, /*! ./../view/standar */ "./resources/js/view/standar/index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(32), __webpack_require__.e(0), __webpack_require__.e(18)]).then(__webpack_require__.bind(null, /*! ./../view/standar */ "./resources/js/view/standar/index.vue"));
   },
   children: [{
     path: '/standar/list',
@@ -99159,7 +99159,7 @@ var routes = [{
 }, {
   path: '/office',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(14)]).then(__webpack_require__.bind(null, /*! ./../view/office */ "./resources/js/view/office/index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(32), __webpack_require__.e(0), __webpack_require__.e(14)]).then(__webpack_require__.bind(null, /*! ./../view/office */ "./resources/js/view/office/index.vue"));
   },
   children: [{
     path: '/office/list',
@@ -99170,7 +99170,7 @@ var routes = [{
 }, {
   path: '/factor',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(13)]).then(__webpack_require__.bind(null, /*! ./../view/factor */ "./resources/js/view/factor/index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(32), __webpack_require__.e(0), __webpack_require__.e(13)]).then(__webpack_require__.bind(null, /*! ./../view/factor */ "./resources/js/view/factor/index.vue"));
   },
   children: [{
     path: '/factor/list',
@@ -99193,7 +99193,7 @@ var routes = [{
   path: '/file',
   name: 'file',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(9)]).then(__webpack_require__.bind(null, /*! ./../view/file */ "./resources/js/view/file/index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(32), __webpack_require__.e(0), __webpack_require__.e(9)]).then(__webpack_require__.bind(null, /*! ./../view/file */ "./resources/js/view/file/index.vue"));
   },
   children: [{
     path: '/file/list',
@@ -99227,7 +99227,7 @@ var routes = [{
 }, {
   path: '/file-verification',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(10)]).then(__webpack_require__.bind(null, /*! ./../view/file_verification */ "./resources/js/view/file_verification/index.vue"));
+    return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ./../view/file_verification */ "./resources/js/view/file_verification/index.vue"));
   },
   children: [{
     path: '/file-verification/list',
@@ -99238,7 +99238,7 @@ var routes = [{
 }, {
   path: '/position',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(17)]).then(__webpack_require__.bind(null, /*! ./../view/position */ "./resources/js/view/position/index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(32), __webpack_require__.e(0), __webpack_require__.e(17)]).then(__webpack_require__.bind(null, /*! ./../view/position */ "./resources/js/view/position/index.vue"));
   },
   children: [{
     path: '/position/list',
@@ -99249,7 +99249,7 @@ var routes = [{
 }, {
   path: '/person',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(16)]).then(__webpack_require__.bind(null, /*! ./../view/person */ "./resources/js/view/person/index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(32), __webpack_require__.e(0), __webpack_require__.e(16)]).then(__webpack_require__.bind(null, /*! ./../view/person */ "./resources/js/view/person/index.vue"));
   },
   children: [{
     path: '/person/list',
@@ -99271,7 +99271,7 @@ var routes = [{
 }, {
   path: '/permission',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(1), __webpack_require__.e(0), __webpack_require__.e(15)]).then(__webpack_require__.bind(null, /*! ./../view/permission */ "./resources/js/view/permission/index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(32), __webpack_require__.e(0), __webpack_require__.e(15)]).then(__webpack_require__.bind(null, /*! ./../view/permission */ "./resources/js/view/permission/index.vue"));
   },
   children: [{
     path: '/permission/list',

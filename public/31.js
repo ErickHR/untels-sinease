@@ -248,7 +248,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.small {\n  margin:  150px auto;\n  flex-wrap: wrap;\n  width: -webkit-min-content;\n  width: -moz-min-content;\n  width: min-content;\n}\n", ""]);
+exports.push([module.i, "\n.small {\n  margin:  150px auto;\n}\n", ""]);
 
 // exports
 
