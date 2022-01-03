@@ -19,14 +19,17 @@
 
 // Route::get('/home', 'HomeController@index')->name('home');
 
-Route::post('file-upload', 'FileController@upload');
 
-Route::get('/token', function () {
-    return csrf_token(); 
-});
+// Route::get('/token', function () {
+//     return csrf_token(); 
+// });
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+
+Route::get('/show-report', function () {
+    return view('viewOtherRols');
+});
 
 // Route::get('/home', function () {
 //     return redirect('/login');
@@ -104,6 +107,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('get/{file_name}', 'FileController@downloadFile');
     Route::get('file-dowloand-all/files-all', 'ZipDowload@fileDowloadAll');
     Route::get('file-get-file', 'FileController@getFile');
+    Route::post('file-upload', 'FileController@upload');
 
     Route::resource('file-description', 'FileDescriptionController');
 

@@ -190,4 +190,18 @@ class StandarController extends Controller
 
     }
 
+    public function getByFactor( Request $request )
+    {
+        
+        $standar = Standar::where('factor_id', '=', $request->factor_id)
+            ->get();
+
+        if( !is_null( $standar ) ) {
+            return response( [ 'msg' => "Existe Registro", 'value' => true, "data" => $standar ], 200 );
+        }
+
+        return response( [ 'msg' => "No hay registros", 'value' => false, "data" => null ], 200 );
+
+    }
+
 }

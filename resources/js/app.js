@@ -30,6 +30,7 @@ import { Bar, Line } from 'vue-chartjs'
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('view-other-rols', require('./components/viewOthersRols.vue').default);
 Vue.component('validation-provider', ValidationProvider);
 Vue.component('validation-observer', ValidationObserver);
 /**

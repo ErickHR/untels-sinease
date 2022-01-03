@@ -7,9 +7,12 @@ use App\Utils\WithUtils;
 use Carbon\Carbon;
 use App\FileDescription;
 
+// use Spatie\PdfToImage\Pdf;
+use \Baraja\PdfToImage\Convertor;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
+// use Org_Heigl\Ghostscript\Ghostscript;
 
 class FileController extends Controller
 {
@@ -139,12 +142,72 @@ class FileController extends Controller
     }
 
     function downloadFile($file_name){
+        // return response()->file(Storage::get('public/files/'.$file_name), ['Content-Type' => 'image/jpeg']);
+        // return Storage::url('public/files/'.$file_name);
+        // $pathDiskLocal = Storage::url('files/1_2022-01-03_10-48-25_UPS-CT004754 (3).pdf');
+        // $pathDiskLocal = Storage::disk('local')->getDriver()->getAdapter()->getPathPrefix();
+        // $pdfPath = $pathDiskLocal.'public\files\\'.$file_name;
+        // $imagePath = $pathDiskLocal.'public\files\\'.$file_name;
+
+        // // Render PDF to image and save to disk.
+        // Convertor::convert($pdfPath, $imagePath, 'jpg');
+        // return true;
+        // return [$pathDiskLocal, $pathDiskLocal.'public\files\\'.$file_name];
+        // return [ file_exists($pathDiskLocal.'public\files\\'.$file_name) ];
+        // $pdf = new Pdf( $pathDiskLocal.'public\files\\'.$file_name );
+        // $pdf->setCompressionQuality(85);
+        // $pdf->setColorspace(1);
+        // $pdf->setGsPath($pathDiskLocal.'public\files\\');
+        // $pdf->setOutputFormat('png');
+        // $pageLimit = $pdf->getNumberOfPages() > 10 ? 10: $pdf->getNumberOfPages();
+        //      if($pdf->getNumberOfPages() >1) {
+        //         //using if to account for possible count of 0, rather than just relying on the loop
+        //         for ($i = 1; $i <=$pageLimit; $i++) {
+        //             $name = md5(time()) . ".png";
+        //             $tempPath = sys_get_temp_dir() . "/" . $name;
+        //             //
+        //             $pdf->setPage($i)
+        //                 ->saveImage($tempPath);
+        //             //
+        //             Storage::disk('local')->put("/preview/{$name}", file_get_contents($tempPath), 'public');
+
+        //             $page = new PreviewImagePage();
+        //             $page->url = "preview/{$name}";
+        //             $page->asset_file_history_id = $historyID;
+        //             $page->save();
+
+        //         }//loop through the pages
+        //     }//if
+        //     else
+        //     {
+        //         $name = md5(time()) . ".png";
+                // $tempPath = sys_get_temp_dir() . "/" . $file_name;
+        //         //
+        //         $pdf->saveImage($tempPath);
+        //         //
+        //         Storage::disk('local')->put("/preview/{$name}", file_get_contents($tempPath), 'public');
+
+        //         $page = new PreviewImagePage();
+        //         $page->url = "preview/{$name}";
+        //         $page->asset_file_history_id = $historyID;
+        //         $page->save();
+
+        //     }
+        // $pdf_url = 'C:\Program Files\public\pdf\file.pdf';
+        // $pdf = new Pdf($pdf_url);
+        // Ghostscript::setGsPath("C:\Program Files\gs\gs9.52\bin\gswin64c.exe");
+        // $pdf->setOutputFormat('png')->saveImage($tempPath);
+        // // $pdf->saveImage($tempPath);
+        // $img = file_get_contents( $tempPath );
+        // // $img = file_get_contents(public_path( $tempPath ));
+        // return response($img)->header('Content-type','image/png');
+        // // return $pdf->getNumberOfPages();
         return Storage::response('public/files/'.$file_name);
         // $file = Storage::disk('public')->get('/files/'.$file_name, [
             // 'Content-Disposition' => 'inline; filename="'. $file_name .'"'
         // ]);
         // return $file;
-        // return (new Response($file, 200))
+        // return response( [Storage::response('public/files/'.$file_name)], 200)
         // ->header('Content-Type', 'image/jpeg');
         // return response()->file( $file );
         // return response( [ $file ], 200, ['Content-Type' => 'application/pdf'] );
@@ -214,6 +277,30 @@ class FileController extends Controller
         }
 
         return response( [ 'value' => false, 'msg' => 'No hay lista', 'data' => null ], 200 );
+
+    }
+
+    public function getByStandar( Request $request )
+    {
+        
+        $fileList = File::where('standars_id', '=', $request->standar_id)
+            ->where('status_file_id', '=', $request->status_file)
+            ->where('status', '=', true)
+            ->get();
+
+        if( count( $fileList ) ) {
+            return response( [ 'value' => true, 'msg' => 'Listando', 'data' => $fileList ], 200 );
+        }
+
+        return response( [ 'value' => false, 'msg' => 'No hay lista', 'data' => null ], 200 );
+
+    }
+
+    public function showImg( Request $request )
+    {
+        
+        $pdf = new Spatie\PdfToImage\Pdf($pathToPdf);
+        $pdf->saveImage($pathToWhereImageShouldBeStored);
 
     }
 

@@ -10,6 +10,7 @@
             :label="label"
             @select="selectOption"
             @remove="removeOption"
+            @input="changeOption"
             :multiple="multipleSelect"
         ></multiselect>
     </div>
@@ -26,6 +27,7 @@
                     :label="label"
                     @select="selectOption"
                     @remove="removeOption"
+                    @input="changeOption"
                     :multiple="multipleSelect"
                     :class="{ 'is-invalid is-invalid-select' : errors.length != 0, 'form-control-alternative' : errors.length == 0 }"
                 ></multiselect>
@@ -88,6 +90,10 @@
 
             selectOption(selectedOption, id){
                 this.$emit('selectOption', selectedOption)
+            },
+
+            changeOption( value ){
+                this.$emit('changeOption', {...value})
             },
 
             async showData(){

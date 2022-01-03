@@ -167,4 +167,18 @@ class FactorController extends Controller
 
     }
 
+    public function getByDimension( Request $request )
+    {
+        
+        $factor = Factor::where('dimension_id', '=', $request->dimension_id)
+            ->get();
+
+        if( !is_null( $factor ) ) {
+            return response( [ 'msg' => "Existe Registro", 'value' => true, "data" => $factor ], 200 );
+        }
+
+        return response( [ 'msg' => "No hay registros", 'value' => false, "data" => null ], 200 );
+
+    }
+
 }
