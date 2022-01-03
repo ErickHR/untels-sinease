@@ -44,6 +44,25 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
+                        <?php 
+                            if( $_SERVER["REQUEST_URI"] == '/show-report' ) {
+                        ?>
+                            <li class="nav-item">
+                                <a class="nav-link color_untels" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                        <?php 
+                            } else {
+                        ?>
+                            @guest
+                                <li class="nav-item">
+                                    <a class="nav-link color_untels" href="/show-report">Reporte</a>
+                                </li>
+                            @else
+                            @endguest
+
+                        <?php 
+                            }
+                        ?>
                         @guest
                             {{-- <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
